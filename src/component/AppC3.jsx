@@ -17,7 +17,10 @@ function AppC3() {
   const apiUrl = url + "/customer/read.php";
   const requestOptions = {
     method: "GET", // หรือ 'POST', 'PUT', 'DELETE', ฯลฯ
-    headers: myHeaders,
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `857F7237C03246028748D51C97D4BADE`,
+    },
     //"Content-Type": "application/json",
     //"API-Key": "857F7237C03246028748D51C97D4BADE",
     //หรือเพิ่ม headers อื่น ๆ ตามต้องการ
